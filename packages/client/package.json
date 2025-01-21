@@ -1,0 +1,14 @@
+{
+  "name": "@infokes/client",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies":{
+    "@infokes/server" : "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

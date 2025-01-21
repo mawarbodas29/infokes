@@ -1,0 +1,15 @@
+{
+  "name": "infokes",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others \"cd apps/frontend && bun dev\" \"cd apps/backend && bun dev\"",
+    "clean": "rm -f bun.lockb"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
